@@ -20,14 +20,14 @@ class DecoderContainer extends React.Component {
     }
   }
 
-  componentDidMount() {
-    axios.get('http://localhost:8000/searches').then((data) => {
-      console.log(data.data);
-      this.updateSearches();
-    }).catch((err) => {
-      this.updateSearches();
-    })
-  }
+  // componentDidMount() {
+  //   axios.get('http://localhost:8000/searches').then((data) => {
+  //     console.log(data.data);
+  //     this.updateSearches();
+  //   }).catch((err) => {
+  //     this.updateSearches();
+  //   })
+  // }
 
   handleKeyPress(e, letter) {
     //adding ways to push to textbox
@@ -68,20 +68,20 @@ class DecoderContainer extends React.Component {
     })
   }
 
-  handleNutrimatic() {
-    console.log('entered handle nutrimatic');
-    axios.post('http://localhost:8000/searches', {search: this.state.string}).then(() => {
-      this.updateSearches();
-    })
-  }
+  // handleNutrimatic() {
+  //   console.log('entered handle nutrimatic');
+  //   axios.post('http://localhost:8000/searches', {search: this.state.string}).then(() => {
+  //     this.updateSearches();
+  //   })
+  // }
 
-  updateSearches() {
-    axios.get('http://localhost:8000/searches').then((data) => {
-      this.setState({searches: data.data});
-    }).catch((err) => {
-      console.error(err);
-    })
-  }
+  // updateSearches() {
+  //   axios.get('http://localhost:8000/searches').then((data) => {
+  //     this.setState({searches: data.data});
+  //   }).catch((err) => {
+  //     console.error(err);
+  //   })
+  // }
 
   toggle(position) {
     this.setState({[position]: !this.state[position]})
@@ -154,12 +154,12 @@ class DecoderContainer extends React.Component {
         <div>
           Click Add, ' . ' or 'Enter' to add the current letter to the textbox.
         </div>
-        <a href={`https://nutrimatic.org/?q=%3C${this.state.string.replaceAll('?', 'A')}%3E&go=Go`} target="_blank" rel="noreferrer" onClick={this.handleNutrimatic.bind(this)} className="button">Anagram on Nutrimatic</a>
-        <div>Recent searches:
+        <a href={`https://nutrimatic.org/?q=%3C${this.state.string.replaceAll('?', 'A')}%3E&go=Go`} target="_blank" rel="noreferrer" className="button">Anagram on Nutrimatic</a>
+        {/* <div>Recent searches:
           {this.state.searches.map((search, index) => {
             return <RecentSearches search={search.search} key={index}/>
           })}
-        </div>
+        </div> */}
       </div>
 
 
