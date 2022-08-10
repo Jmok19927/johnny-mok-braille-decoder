@@ -2,8 +2,6 @@ import React from 'react';
 import Dot from './Dot.jsx';
 import dict from './BrailleDictionary.js';
 import InputBox from './InputBox.jsx';
-import RecentSearches from './recentSearches.jsx';
-import axios from 'axios';
 
 class DecoderContainer extends React.Component {
   constructor(props){
