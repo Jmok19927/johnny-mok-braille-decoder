@@ -125,16 +125,16 @@ class DecoderContainer extends React.Component {
       tabIndex='0'
       >
         <div className='DotRow'>
-          <Dot toggled={this.state.TL} position={'TL'} handleClick={this.toggle.bind(this)}/>
-          <Dot toggled={this.state.TR} position={'TR'} handleClick={this.toggle.bind(this)}/>
+          <Dot toggled={this.state.TL} number={'7'} position={'TL'} handleClick={this.toggle.bind(this)}/>
+          <Dot toggled={this.state.TR} number={'8'} position={'TR'} handleClick={this.toggle.bind(this)}/>
         </div>
         <div className='DotRow'>
-          <Dot toggled={this.state.ML} position={'ML'} handleClick={this.toggle.bind(this)}/>
-          <Dot toggled={this.state.MR} position={'MR'} handleClick={this.toggle.bind(this)}/>
+          <Dot toggled={this.state.ML} number={'4'} position={'ML'} handleClick={this.toggle.bind(this)}/>
+          <Dot toggled={this.state.MR} number={'5'} position={'MR'} handleClick={this.toggle.bind(this)}/>
         </div>
         <div className='DotRow'>
-          <Dot toggled={this.state.BL} position={'BL'} handleClick={this.toggle.bind(this)}/>
-          <Dot toggled={this.state.BR} position={'BR'} handleClick={this.toggle.bind(this)}/>
+          <Dot toggled={this.state.BL} number={'1'} position={'BL'} handleClick={this.toggle.bind(this)}/>
+          <Dot toggled={this.state.BR} number={'2'} position={'BR'} handleClick={this.toggle.bind(this)}/>
         </div>
 
         <div className='flex'>

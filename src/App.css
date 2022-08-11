@@ -468,6 +468,7 @@ there.
   height: 2vh;
   width: 2vh;
   background-color: off whitesmoke;
+  color:white;
 }
 
 .ColoredDot {
@@ -480,6 +481,8 @@ there.
   height: 2vh;
   width: 2vh;
   background-color: black;
+  background: radial-gradient(circle at 50% 120%, #323232, #0a0a0a 80%, #000000 100%);
+  color:white;
 }
 
 .form {
