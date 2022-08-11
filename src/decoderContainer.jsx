@@ -152,7 +152,10 @@ class DecoderContainer extends React.Component {
         <div>
           Click Add, ' . ' or 'Enter' to add the current letter to the textbox.
         </div>
-        <a href={`https://nutrimatic.org/?q=%3C${this.state.string.replaceAll('?', 'A')}%3E&go=Go`} target="_blank" rel="noreferrer" className="button">Anagram on Nutrimatic</a>
+        <div>
+          <a href={`https://nutrimatic.org/?q=%3C${this.state.string.replaceAll('?', 'A')}%3E&go=Go`} target="_blank" rel="noreferrer" className="button button-primary ">Anagram on Nutrimatic</a>
+        </div>
+
         {/* <div>Recent searches:
           {this.state.searches.map((search, index) => {
             return <RecentSearches search={search.search} key={index}/>
